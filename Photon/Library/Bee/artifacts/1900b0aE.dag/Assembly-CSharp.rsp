@@ -352,7 +352,12 @@
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 "Assets/Scripts/Coin.cs"
 "Assets/Scripts/CoinSpawner.cs"
+"Assets/Scripts/LevelManager.cs"
+"Assets/Scripts/Obstacle.cs"
+"Assets/Scripts/ObstacleSpawner.cs"
 "Assets/Scripts/PlayerMovement.cs"
+"Assets/Scripts/Pool.cs"
+"Assets/Scripts/UiScoreManager.cs"
 -langversion:8.0
 
 /deterministic

@@ -10,7 +10,7 @@ public class Coin : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             onCollected();
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }
