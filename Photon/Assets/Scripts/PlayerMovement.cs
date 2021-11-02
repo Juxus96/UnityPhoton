@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        LevelManager.onGameWon += () => { gameObject.SetActive(false); };
         rb = GetComponent<Rigidbody2D>();
         currentJumps = 0;
     }

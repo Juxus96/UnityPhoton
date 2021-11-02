@@ -357,7 +357,8 @@
 "Assets/Scripts/ObstacleSpawner.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/Pool.cs"
-"Assets/Scripts/UiScoreManager.cs"
+"Assets/Scripts/Ui/UiManager.cs"
+"Assets/Scripts/Ui/UiScoreManager.cs"
 -langversion:8.0
 
 /deterministic

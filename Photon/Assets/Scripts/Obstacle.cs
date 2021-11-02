@@ -1,11 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
     [SerializeField] private float speed;
-    
+    public static Action obstacleHit;
+
+    private void Start()
+    {
+        LevelManager.onGameWon += () => { gameObject.SetActive(false); };
+    }
+
     private void Update()
     {
         transform.Translate(Vector2.down * Time.deltaTime * speed);    
@@ -14,5 +19,13 @@ public class Obstacle : MonoBehaviour
     private void OnBecameInvisible()
     {
         gameObject.SetActive(false);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            obstacleHit();
+        }
     }
 }
